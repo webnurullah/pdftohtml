@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  
+
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+     
+        h1, h2, h3, h4, h5, h6, p{
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+        }
+        h1{
+            font-size: 85px;
+            font-family: 'Crimson Text', serif;
+            font-weight: bolder;
+            color: #50453A;
+        }
+        h2{
+            font-size: 52px;
+            font-family: 'Crimson Text', serif;
+            color: #6C7172;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Crimson Text', serif;
+            padding-bottom: 50px;
+            color: #50453A;
+        }
+        h4{
+            font-size: 25px;
+            font-family: 'Crimson Text', serif;
+            color: #6C7172;
+        }
+        h5{
+            font-size: 18px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            color: #441714;
+        }
+        h6{
+            font-size: 18px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+        }
+        span{
+            font-family: 'Lato', sans-serif;
+        }
+        p{
+            font-size: 18px;
+            font-family: 'Lato', sans-serif;
+            padding-bottom: 20px;
+            font-weight: 300;
+        }
+        .row-one{
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+        .page-container{
+            padding: 60px;
+            position: relative;
+        }
+        .mountain-bg{
+            position: absolute;
+            width: 100%;
+            right: 0;
+            left: 0;
+            top: 0;
+            height: 430px;
+           z-index: -1;
+        }
+        .logo-gray{
+          width: 100%;
+        }
+        .bl-2, bl-3{
+            padding-top: 30px;
+            
+        }
+        .bl-2{
+            border-bottom: 1px solid #917F67;
+            margin-bottom: 30px;
+        }
+       
+        .bl-3 h4{
+            padding-top: 20px;
+        }
+        .bl-3 h5{
+            padding-bottom: 0px;
+        }
+        .price-box{
+            padding-bottom: 50px;
+            
+        }
+        .amount{
+            color: #50453A;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .br-1 span{
+            padding-top: 25px;
+            display: block;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .br-2 img{
+            width: 100px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .scane-box-text{
+            padding-top: 20px;
+          
+        }
+        .scane-box-text h6{
+            padding-bottom: 15px;
+            font-size: 25px;
+        }
+        .scane-box-text span{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .br-1 {
+            margin-top: 170px;
+        }
+        .br-2{
+            margin-top: 210px;
+        }
+        .br-3 {
+            margin-top: 185px;
+        }
+        
+        .br-3 span{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .page-single-block{
+            border-bottom:  1px solid #917F67;
+            padding-bottom: 15px;
+        }
+        .page-single-block:last-child{
+            border-bottom: none;
+        }
+        .page-single-block h5{
+            color: #50453A;
+            padding-top: 15px;
+            font-weight: 500;
+        }
+        .page-single-block p{
+            color: #231F20;
+            padding-bottom: 0px;
+        }
+        .page-single-block span{
+            color: #A2A9AF;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .page-single-block .oder{
+           padding-top: 10px;
+        }
+        .page-footer h5{
+            font-weight: 300;
+        }
+        .page-footer p{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .clear-both .left-text{
+            width: 70%;
+            float: left;
+        }
+        .clear-both .right-text{
+            width: 30%;
+            float: right;
+            text-align: end;
+        }
+        .clear-both::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .blank-height{
+            height: 1100px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- first page -->
+    <div class="page-container page-one">
+        <img class="mountain-bg" src="img/mountain-bg.jpg" alt="">
+    
+        <div class="row row-one">
+            <div class="col-xs-6">
+               <div class="bl-1" >
+                    <h4>TAGES-</h4>
+                    <h3>APERITIF </h3>  
+                    <div class="price-box clear-both" >
+                        <div class="left-text" >
+                            <h5>APEROL SPRITZ</h5> 
+                        </div>
+                        <div class="right-text" >
+                            <span class="amount">5,00 €</span>
+                        </div>
+                    </div>
+                    <h4>UNSERE</h4>
+                     <h3>WEINEMPFEHLUNG</h3>
+               </div>
+               <div class="bl-2">
+                    <div class="clear-both" >
+
+
+                       <div class="left-text">
+                        <h5 class="" >WEISSWEIN</h5>
+                        <p>Eisacktaler „Sylvaner“ <br>
+                            Kellerei Neusti ft <br> <br>
+                      Ein elegant - kräft iger Weißwein, 
+                            grüngelb bis strohgelb in der 
+                            Farbe; frisch, mit angenehmen 
+                            Fruchtnoten nach reifem Apfel, 
+                            reifer Birne und Honigmelone. 
+                            Kräft ig und mineralisch am 
+                            Gaumen, saft iger Abgang</p>
+                       </div>
+
+                       <div class="right-text">
+                        <span class="amount" >27,00 €</span>
+                       </div>
+                    </div>
+                  
+               </div>
+               <div class="bl-3" >
+                    <div class="clear-both">
+                       
+                        <div class="left-text">
+                            <h5>ROTWEIN</h5>
+                            <p>Lagrein „Collecti on“ Baron Eyrl 
+                                Kellerei Bozen <br> <br>
+                            Nach der traditi onellen 
+                                Rotweinvergärung im Stahlfass 
+                                reift  der junge Wein im großen 
+                                Eichenfass und anschließend in der 
+                                Flasche weiter. Farbe: intensives, 
+                                dunkles Rubinrot mit violett en 
+                                Reﬂ exen. Geruch: blumig nach 
+                                Veilchen und Rosen, fruchti g 
+                                nach dunklen Beeren, würzig und 
+                                mineralisch nach feuchter Erde, 
+                                typische Kakaonoten</p>
+                        </div>
+                        <div class="right-text">
+                            <span class="amount" >29,00 €</span>
+                        </div>
+                    </div>
+                   
+                    <h4>DER PASSENDE</h4>
+                    <h3>DIGESTIV</h3>
+               </div>
+                <div class="bl-4 clear-both">
+                    <div class="left-text">
+                        <h5>GRAPPA BLAUBURGUNDER</h5>
+                    </div>
+                   <div class="right-text">
+                    <span class="amount" >6,00 €</span>
+                   </div>
+                </div>
+            </div>
+
+            <div class="col-xs-5 col-xs-offset-1">
+                <img class="logo-gray" src="img/logo-gray.jpg" alt="">
+            
+                    <div class="br-1" >
+                        <h2>ABEND-</h2>
+                        <h1>MENÜ</h1>
+                        <span>06. März 2019</sp>
+                    </div>
+                    <div class="br-2 clear-both">
+                        <img src="img/qr-white.jpg" alt="">
+                        <div class="scane-box-text" >
+                            <h6>Info & News</h6>
+                            <span>alpenblick.guestnet.info</sp>
+                        </div>
+                    </div>
+                    <div class="br-3">
+                        <p>Bitt e stellen Sie sich aus den angebotenen 
+                            Gerichten Ihr Menü zusammen und kreuzen 
+                            Sie bitt e die Speisen an, die wir servieren 
+                            dürfen.</p>
+                        <span>TISCHNUMMER:</span>
+                    </div>
+               
+            </div>
+        </div>
+     
+    </div>
+
+    <!-- second page -->
+    <div class="page-container">
+        <img class="mountain-bg" src="img/mountain-bg.jpg" alt="">
+      
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="page-footer" >
+                    <div class="blank-height"></div>
+                    <h5>
+                        ALLERGENE
+                    </h5>
+                    <p>1 Glutenhalti ges Getreide, 2 Krebsti ere, 3 Eier, <br>
+                        4 Fische, 5 Erdnüsse, 6 Sojabohnen, 7 Milch, <br>
+                        8 Schalenfrüchte, 9 Sellerie, 10 Senf, <br>
+                        11 Sesamsamen, 12 Schwefeldioxid &Sulphite, <br>
+                        13 Lupinen, 14 Weichti ere</p>
+                </div>
+            </div>
+            <div class="col-xs-5 col-xs-offset-1">
+                <div class="page-single-block" >
+                    <h5>DIVERSE KALTE UND WARME 
+                        VORSPEISEN</h5>
+                    <p>vom Buﬀ et</p>
+                </div>
+                <div class="page-single-block">
+                    <h5>KÜRBIS-INGWERSÜPPCHEN</h5>
+                    <p>mit Sahnehaube</p>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+                    <h5>MULTI VITAMIN DRINK</h5>
+                    <span>1, 2, 3</span>
+                </div>
+                <div class="page-single-block">
+                    <h5>FISCHGERICHT</h5>
+                    <p>Loup de Mer mit Oliven Caponata und 
+                        Champignon-Karott engemüse</p>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+
+                    
+                    <h5>FISCHGERICHT</h5>
+                    <p>Loup de Mer mit Oliven Caponata und 
+                        Champignon-Karott engemüse</p>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+                   
+                    
+                    <h5>FLEISCHGERICHT</h5>
+                    <p>Knusprig gebratene Entenbrust auf 
+                        Wirsinggemüse</p>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+                    
+                    <h5>VEGETARISCHES GERICHT</h5>
+                    <p>Gersten Risott o mit Gemüse</p>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+                    
+                    <h5>VEGETARISCHES GERICHT</h5>
+                    <p>Gersten Risott o mit Gemüse</p>
+                    <span>1, 2, 3</span>
+                    <p>oder</p>
+                    
+                    <h5>VEGETARISCHES GERICHT</h5>
+                    <span>1, 2, 3</span>
+                     
+                </div>
+
+                <div class="page-single-block" >
+
+                    <h5>MASCARPONE CREME</h5>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+
+                    <h5>HAUSGEMACHTES EIS</h5>
+                    <span>1, 2, 3</span>
+                    <p class="oder" >oder</p>
+
+
+                    <h5>KÄSEBRETTL</h5>
+                    <span>1, 2, 3</span>
+                </div>
+                
+                
+            </div>
+        </div>
+    
+    </div>
+   
+</body>
+</html>
