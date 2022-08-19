@@ -14,13 +14,12 @@
             font-family: 'Raleway', sans-serif;
         }
         .page-container{
-            margin: 60px;
+            margin: 50px;
             text-align: center;
         }
         .col-xs-5{
             padding-right: 0px;
             padding-left: 0px;
-            border: 1px solid #EEEEEE;
         }
         .banner{
             width: 100%;
@@ -43,27 +42,39 @@
             font-size: 12px;
             font-weight: 700;
             display: inline-block;
-            margin: 10px 0px;
+            margin: 5px 0px;
         }
         .col-right{
             text-align: center;
             padding-top: 30px;
             padding-bottom: 50px;
+            border: 1px solid #EEEEEE;
+        }
+        .col-left{
+            border: 1px solid #EEEEEE;
         }
         .line{
-            margin: 20px 0px;
+            margin: 25px 0px;
             width: 30px;
-            height: 3px;
+            height: 2px;
             background-color: #F5EFDD;
+        }
+
+        .clear-both .col-left{
+            width: 45%;
+            float: left;
+        }
+        .clear-both .col-right{
+            width: 45%;
+            float: right;
         }
     </style>
 </head>
 
 <body>
     <div class="page-container">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-5 col-left">
+            <div class="clear-both">
+                <div class="col-left">
                     <img class="banner" src="images/banner.png" alt="">
                     <img class="logo" src="images/logo.png" alt="">
 
@@ -81,7 +92,7 @@
                         Integer vitae feugiat massa, eget aliquet ligula. Mauris
                        vulputate viverra interdum.</p>
                 </div>
-                <div class="col-xs-5 col-xs-offset-2 col-right">
+                <div class="col-right">
                    <div class="block">
                         <h3>Insalate ed antipast</h3>
                         <p>dal buﬀ et</p>
@@ -125,7 +136,6 @@
 
                 </div>
             </div>
-        </div>
     </div>
 </body>
 </html>
