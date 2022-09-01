@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Fokus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;700&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+        h1, h2, h3, h4, h5, p, span{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: inline-block;
+        }
+        .page-container{
+            margin: 60px;
+        }
+        h1{
+        }
+        h2{
+            font-family: 'Playfair Display', serif;
+        }
+        h3{
+            font-weight: 300;
+        } 
+        h4{ 
+            color: #1D7C9A;
+        }
+        .logo{ 
+        }
+        @font-face {
+        font-family: Lemon_Tuesday;
+        src: url(fonts/Lemon_Tuesday.otf);
+        }
+        .banner{
+            background-image: linear-gradient(190deg, rgba(255, 255, 255, 0.3), #1b7a9a61), url(images/banner.png);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+
+        }
+        .heading{
+            background-color: #1B7B9A;
+            padding: 5px 10px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .clear-both .left-text{
+            float: left;
+        }
+        .clear-both .right-text{
+            float: right;
+
+        }
+        .heading .right-text{
+            margin-top: 5px;
+        }
+        .clear-both::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .first-block{
+            margin-top: 10px;
+        }
+        .default-block{
+            margin-top: 15px;
+        }
+        .single-pera{
+            margin-top: 15px;
+        }
+        .single-pera p{
+            margin-top: 5px;
+        }
+        .single-pera span{
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .banner{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            color: #fff;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        .banner img{
+           width: 150px;
+        }
+        .banner h1{
+            font-family: Lemon_Tuesday;
+            font-size: 40px;
+            line-height: 70px;
+        }
+        .banner .right-text{
+            text-align: end;
+        }
+        .banner h3{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="banner clear-both">
+            <div class="left-text">
+             
+                 <img src="images/logo.svg" alt="">
+               
+            </div>
+            <div class="right-text">
+                <h1>Wochenprogramm</h1> <br>
+                <h3>20.02.22 - 26.02.22</h3>
+            </div>
+        </div>
+        <div class="first-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Freitag</h2>
+                </div>
+               <div class="right-text">
+                     <h3>24.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+        <div class="default-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Samstag</h2>
+                </div>
+               <div class="right-text">
+                     <h3>25.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+        <div class="default-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Sonntag</h2>
+                </div>
+               <div class="right-text">
+                     <h3>26.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="default-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Montag</h2>
+                </div>
+               <div class="right-text">
+                     <h3>26.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+        <div class="default-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Dienstag</h2>
+                </div>
+               <div class="right-text">
+                     <h3>26.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+        <div class="default-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Mittwoch</h2>
+                </div>
+               <div class="right-text">
+                     <h3>26.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+        <div class="default-block">
+            <div class="heading clear-both">
+                <div class="left-text">
+                    <h2>Donnerstag</h2>
+                </div>
+               <div class="right-text">
+                     <h3>26.02.2022</h3>
+               </div>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+            <div class="single-pera">
+                <h4>Titel Aktivität</h4>
+                <p>Direkt vom Hotel begleitet euch Sanna vorbei an der Trojeralm weiter bis zu den Kappenlöchern. Dort wurde 1600 unter schwersten Bedingungen Kupfer abgebaut. 
+                    Auf dem Rückweg kann man sich auf der Sonnenterrasse der Trojeralm mit regiona.</p>
+                <span>08-00 - 08:45 Uhr | Rezeption | 15,00 € | Anmeldung erforderlich</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
