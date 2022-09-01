@@ -81,9 +81,20 @@
             color: #fff;
             padding-right: 50px;
             padding-left: 50px;
+            position: relative;
         }
-        .banner img{
+        .banner .logo{
            width: 150px;
+        }
+        .banner .banner-img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
         }
         .banner h1{
             font-family: Lemon_Tuesday;
@@ -100,11 +111,10 @@
 </head>
 <body>
     <div class="page-container">
-        <div style="background-position: top; width: 100%;background-repeat: no-repeat;background-size: cover;background-image: linear-gradient(190deg, rgba(255, 255, 255, 0.3), #1b7a9a61),  url(images/banner.png)" class="banner clear-both">
+        <div class="banner clear-both">
+            <img class="banner-img" src="images/banner.png" alt="">
             <div class="left-text">
-             
-                 <img src="images/logo.svg" alt="">
-               
+                 <img class="logo" src="images/logo.svg" alt="">
             </div>
             <div class="right-text">
                 <h1>Wochenprogramm</h1> <br>
