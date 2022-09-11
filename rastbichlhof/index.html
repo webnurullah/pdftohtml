@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+        
+
+        @font-face {
+        font-family: helvetica;
+        src: url(font/Helvetica.ttf);
+        }
+
+
+        body{
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #231F20;
+        }
+
+        .page-container{
+            margin: 60px;
+            text-align: center;
+        }
+        .page-one .lef-column .divider{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 80px;
+        }
+        h1, h2, h3, h4, h5, p, span{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .page-one .lef-column h1{
+            font-family: helvetica ;
+            color: #81983B;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .page-one .lef-column h2{
+            font-weight: bold;
+            font-size: 18px;
+            color: #231F20;
+        }
+        .plan-line{
+            width: 40px;
+            height: 2px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background-color: #C1C3C2;
+            display: inline-block;
+        }
+        h3{
+        } 
+        h4{ 
+        }
+        h6{
+            font-weight: bold;
+            font-size: 18px;
+            color: #849938;
+            margin-top: 30px;
+        }
+        .clear-both .left-text{
+            float: left;
+            width: 48%;
+        }
+        .clear-both .right-text{
+            float: right;
+           width: 48%;
+        }
+        .clear-both::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .logo{ 
+            width: 300px;
+            margin-top: 70px;
+        }
+        .price-left{
+            position: relative;
+
+        }
+        .price-left p{
+           position: absolute;
+           right: 20px;
+           top: 0;
+           color: #231F20;
+        }
+        .price-left h3{
+            font-size: 16px;
+            font-weight: bold;
+            color: #869938;
+        }
+      
+        .page-one p{
+            font-size: 15px;
+        }
+        span{
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .page-one .right-column{
+            border: 2px solid #E6E0DA;
+        }
+        .page-one .right-column h1{
+            font-family: helvetica ;
+            font-size: 40px;
+            color: #7D973E;
+            margin-top: 100px;
+        }
+        .page-one .right-column h2{
+            font-size: 25px;
+        }
+        .box{
+            margin-top: 200px;
+            border: 1px solid #E6E0DA;
+            border-radius: 10px;
+            width: 250px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px 40px;
+        }
+        .box p{
+            font-weight: bolder;
+
+        }
+        .box .clear-both{
+            margin: 20px 0px;
+        }
+        .thin-line{
+            width: 50px;
+            height: 1px;
+            background-color: #BCBEBF;
+            margin-top: 15px;
+        }
+        .right-column .pera{
+            color: #292C2F;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .capture{
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        .capture img{
+            width: 100px;
+            color: #283742;
+        }
+        .capture h2{
+            margin-top: 20px;
+            font-family: helvetica;
+            font-weight: bold;
+        }
+        /* --------------------- page tow ----------- */
+        .page-two{
+           
+        }
+        .page-two h2{
+            color: #859938;
+            font-size: 20px;
+            font-family: helvetica;
+        }
+        .page-two .border, .page-two .border-2{
+            border: 2px solid #E6E0DA;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        .content-segment{
+            margin-bottom: 30px;
+        }
+        .content-segment h3{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .content-segment span{
+            color: #796C68;
+            margin-bottom: 20px;
+        }
+        .border-3{
+            border-right: 1px solid #E8EBE8;
+        }
+        .bottom-one-text {
+            max-width: 70%;
+           display: inline-block;
+           color: #292C2F;
+           margin-bottom: 20px;
+        }
+        .leaf{
+            width: 25px;
+        }
+        .page-two h1{
+            font-size: 30px;
+            font-family: helvetica ;
+            color: #81983B;
+        }
+        .contet-pan-box {
+            position: relative;
+        }
+        .contet-pan-box span{
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            color: #283642;
+            letter-spacing: 1px;
+            top: 8px;
+            font-size: 10px;
+        }
+
+        .contet-pan-box span::after{
+            content: '';
+            position: absolute;
+            right: -2px;   
+            top: -4px;
+            width:50px;
+            height: 2px;
+            background-color: #C1C3C2;
+
+        }
+        .contet-pan-box h4{
+            font-weight: bold;
+        }
+        .divider-2{
+            width: 80px;
+            margin-top: 30px; 
+            margin-bottom: 30px; 
+        }
+        .bottom-text{
+            margin-top: 300px;
+        }
+        .first-col-height{
+            height: 200px;
+        }
+        .leaf-line-text h3{
+            display: inline-block;
+        }
+        .leaf-line-text img{
+            width: 15px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container page-one">
+        <div class="clear-both">
+            <div class="left-text lef-column">
+                <h1>À LA CARTE</h1>
+
+                <div>
+                    <h2>SUPPEN</h2>
+                    <div class="plan-line"></div>
+                    <div class="price-left">
+                        <h3>Rinderconsommé</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>mit Frittaten | mit Backerbsen | mit Nudeln</p>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Tagessuppe</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                 
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Gulaschsuppe</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Kaspressknödelsuppe</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>(1 Knödel)</p>
+                    <img class="divider" src="images/divider.png" alt="">
+                </div>
+        
+                <div>
+                    <h2>SALAT</h2>
+                    <div class="plan-line"></div>
+                    <div class="price-left">
+                        <h3>Beilagensansalat zu einem Hauptgericht</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Großer Salatteller</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <img class="divider" src="images/divider.png" alt="">
+                </div>
+        
+                <div>
+                    <h2>HAUPTGERICHTE</h2>
+                    <div class="plan-line"></div>
+                    <div class="price-left">
+                        <h3>Spinatknödel</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>mit brauner Butter & Parmesan</p>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Kaspressknödel</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>mit brauner Butter & Parmesan</p>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <div class="leaf-line-text" >
+                            <img src="images/leaf.png" alt="">
+                             <h3>Gnocchi Topfen-Ricotta</h3>
+                        </div>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>auf Tomatensauce</p>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Lasagne „al forno“)</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>(nur auf Vorbestellung</p>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Rindsgulasch</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <p>mit Spätzle und Essiggurke</p>
+                    <img class="divider" src="images/divider.png" alt="">
+                </div>
+        
+                <div>
+                    <h2>NACHSPEISEN</h2>
+                    <div class="plan-line"></div>
+                    <div class="price-left">
+                        <h3>Gemischtes Eis (3 Kugeln)</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                    <span>ODER</span>
+                    <div class="price-left">
+                        <h3>Tagesdessert</h3>
+                        <p>€ 4,80</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-text right-column">
+                <img src="images/logo_rastbichlhof.png" alt="" class="logo">
+
+                <div class="heading">
+                    <h1>TAGESMENÜ</h1>
+                    <h2>Montag, 27.05.2022</h2>
+                </div>
+                <div class="box">
+                   <div class="clear-both" >
+                        <p class="left-text" >TISCH NR.</p>
+                        <div class="thin-line right-text" ></div>
+                   </div>
+                   <div class="clear-both" >
+                        <p class="left-text" > ZIMMER NR.</p>
+                        <div class="thin-line right-text" ></div>
+                   </div>
+                </div>
+                <p class="pera" > Bitte je Gericht die gewünschte Anzahl angeben</p>
+
+                <div class="capture">
+                    <img src="images/qrcode.jpeg" alt="">
+                    <h2>INFOS & NEWS </h2>
+                    <p>rastbichlhof.guestnet.info</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-container page-two">
+        <div class="clear-both">
+            <div class="left-text border">
+               <div class="row">
+                    <div class="col-xs-6 border-3">
+                        <h2>APERITIF</h2>
+                        <div class="plan-line"></div>
+                        <div class="content-segment">
+                            <div class="content-box">
+                                <h3>Aperitif 1</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                            <div class="content-box">
+                                <h3>Aperitif 1</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                        </div>
+        
+                        <h2>WEIN</h2>
+                        <div class="plan-line"></div>
+                        <div class="content-segment">
+                            <div class="content-box">
+                                <h3>AWein 1</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                            <div class="content-box">
+                                <h3>AWein 1</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                        </div>
+                        <div class="first-col-height" ></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2>APERITIF</h2>
+                        <div class="plan-line"></div>
+                        <div class="content-segment">
+                            <div class="content-box">
+                                <h3>Digestif 1</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                            <div class="content-box">
+                                <h3>Digestif 1</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                        </div>
+        
+                        <h2>WEIN</h2>
+                        <div class="plan-line"></div>
+                        <div class="content-segment">
+                            <div class="content-box">
+                                <h3>Espresso</h3>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span>12.00€</span>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+
+               <h6>ALLERGENE</h6>
+               <p class="bottom-one-text" >Informationen über Zutaten in unseren Speisen, die Allergien oder 
+                Unverträglichkeiten auslösen können, erhalten Sie auf Nachfrage 
+                bei unseren Service MitarbeiterInnen</p>
+
+                <div class="leaf-footer" >
+                    <img class="leaf" src="images/leaf.png" alt="">
+                    <span>=Vegetarisch</span>
+                </div>
+            </div>
+            <div class="right-text border-2">
+                <h1>MENÜ</h1>
+                <div class="plan-line"></div>
+                <div class="contet-pan-box">
+                    <h4>Broccolicremesuppe</h4>
+                    <span>ANZAHL</span>
+                </div>
+                <img class="divider-2" src="images/divider.png" alt="">
+                <div class="contet-pan-box">
+                    <h4>Tagliatelle Verde</h4>
+                    <span>ANZAHL</span>
+                </div>
+                <p>mit Gorgonzolasauce</p>
+                <span>ODER</span>
+                <div class="contet-pan-box">
+                    <h4>Filetspieß vom Grill</h4>
+                    <span>ANZAHL</span>
+                </div>
+                <p>Kräuterbutter / GrilltomateSpeckbohnen / Pommes Frites</p>
+                <img class="divider-2" src="images/divider.png" alt="">
+                <div class="contet-pan-box">
+                    <h4>Proﬁ teroles</h4>
+                    <span>ANZAHL</span>
+                </div>
+                <p>mit Kaﬀ eecreme</p>
+
+                <div class="bottom-text">
+                    <p>Bitte je Gericht die gewünschte Anzahl angeben</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
