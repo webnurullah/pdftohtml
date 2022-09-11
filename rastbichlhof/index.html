@@ -28,9 +28,9 @@
             text-align: center;
         }
         .page-one .lef-column .divider{
-            margin-top: 30px;
-            margin-bottom: 30px;
-            width: 80px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 60px;
         }
         h1, h2, h3, h4, h5, p, span{
             margin-top: 0px;
@@ -39,7 +39,7 @@
         .page-one .lef-column h1{
             font-family: helvetica ;
             color: #81983B;
-            font-size: 20px;
+            font-size: 30px;
             margin-bottom: 20px;
             margin-top: 20px;
         }
@@ -51,8 +51,8 @@
         .plan-line{
             width: 40px;
             height: 2px;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-top: 5px;
+            margin-bottom: 10px;
             background-color: #C1C3C2;
             display: inline-block;
         }
@@ -102,7 +102,10 @@
         .page-one p{
             font-size: 15px;
         }
-        span{
+        .page-one span{
+            font-size: 10px;
+        }
+         span{
             font-size: 12px;
             font-weight: bold;
             margin-bottom: 5px;
@@ -121,7 +124,7 @@
             font-size: 25px;
         }
         .box{
-            margin-top: 200px;
+            margin-top: 160px;
             border: 1px solid #E6E0DA;
             border-radius: 10px;
             width: 250px;
@@ -141,10 +144,12 @@
             height: 1px;
             background-color: #BCBEBF;
             margin-top: 15px;
+            text-align: center;
+            display: inline-block;
         }
         .right-column .pera{
             color: #292C2F;
-            font-size: 18px;
+            font-size: 14px;
             margin-top: 20px;
         }
         .capture{
@@ -152,13 +157,18 @@
             margin-bottom: 20px;
         }
         .capture img{
-            width: 100px;
+            width: 70px;
             color: #283742;
         }
-        .capture h2{
+        .capture h3{
             margin-top: 20px;
             font-family: helvetica;
             font-weight: bold;
+           font-size: 12px;
+           display: block;
+        }
+        .capture p{
+            font-size:10px ;
         }
         /* --------------------- page tow ----------- */
         .page-two{
@@ -166,7 +176,7 @@
         }
         .page-two h2{
             color: #859938;
-            font-size: 20px;
+            font-size: 24px;
             font-family: helvetica;
         }
         .page-two .border, .page-two .border-2{
@@ -179,11 +189,13 @@
         }
         .content-segment h3{
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
         }
         .content-segment span{
             color: #796C68;
             margin-bottom: 20px;
+            position: relative;
+            top: -4px;
         }
         .border-3{
             border-right: 1px solid #E8EBE8;
@@ -198,7 +210,7 @@
             width: 25px;
         }
         .page-two h1{
-            font-size: 30px;
+            font-size: 35px;
             font-family: helvetica ;
             color: #81983B;
         }
@@ -227,17 +239,18 @@
         }
         .contet-pan-box h4{
             font-weight: bold;
+            font-size: 16px;
         }
         .divider-2{
-            width: 80px;
+            width: 60px; 
             margin-top: 30px; 
             margin-bottom: 30px; 
         }
         .bottom-text{
-            margin-top: 300px;
+            margin-top: 340px; 
         }
         .first-col-height{
-            height: 200px;
+            height: 75px;
         }
         .leaf-line-text h3{
             display: inline-block;
@@ -245,6 +258,9 @@
         .leaf-line-text img{
             width: 15px;
             margin-right: 5px;
+        }
+        .page-two .plan-line{
+            margin-bottom: 40px;
         }
     </style>
 </head>
@@ -359,18 +375,23 @@
                 <div class="box">
                    <div class="clear-both" >
                         <p class="left-text" >TISCH NR.</p>
-                        <div class="thin-line right-text" ></div>
+                        <div class="right-text">
+                            <div class="thin-line" ></div>
+                        </div>
+                       
                    </div>
                    <div class="clear-both" >
                         <p class="left-text" > ZIMMER NR.</p>
-                        <div class="thin-line right-text" ></div>
+                        <div class="right-text">
+                            <div class="thin-line" ></div>
+                        </div>
                    </div>
                 </div>
                 <p class="pera" > Bitte je Gericht die gewünschte Anzahl angeben</p>
 
                 <div class="capture">
                     <img src="images/qrcode.jpeg" alt="">
-                    <h2>INFOS & NEWS </h2>
+                    <h3>INFOS & NEWS </h3>
                     <p>rastbichlhof.guestnet.info</p>
                 </div>
             </div>
