@@ -25,11 +25,15 @@
         p{
             font-weight: 300;
         }
-        .page-container{
-            margin: 60px;
+        .page-one{
+            padding: 60px;
+            overflow: hidden;
+            position: relative;
         }
         .page-two{
-            margin: 60px 60px 0px 60px;
+            padding: 60px;
+            overflow: hidden;
+            position: relative;
         }
 
         h1{
@@ -129,18 +133,22 @@
             margin-bottom: 30px;
             max-width: 400px;
         }
+        .pera-two .heading .line{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
         .pera-one{
             margin-bottom: 10px;
         }
         .pera-two{
-            margin-bottom: 80px;
-            margin-top: 40px;
+            margin-bottom: 140px;
+            margin-top: 60px;
         }
         .pera-two p{
             width: 355px;
         }
         .pera-there{
-            margin-bottom: 220px;
+            margin-bottom: 425px;
         }
         .pera-there h5.spacing{
             margin-bottom: 20px;
@@ -161,16 +169,28 @@
         .menu{
             margin-bottom: 200px;
         }
+      
+        .bg-img{
+            position: absolute;
+            z-index: -1;
+            opacity: .2;
+            height: 100%;
+           width: 200%;
+           left: -100%;
+           top: 0;
+           bottom: 0;
+        }
     </style>
 </head>
 <body>
     <div class="page-one">
+        <img class="bg-img" src="images/tree.svg" alt="">
         <div class="page-container">
             <div class="clear-both">
                 <div class="block-left">
                     <div class="first-spacing"></div>
                     <div class="address" >
-                        <img class="logo-1" src="images/transparent_logo.png" alt="">
+                        <img class="logo-1" src="images/logo-pos.svg" alt="">
                         <p>  Via Reipertinger 3 <br>
                             39031 Riscone - Val Pusteria <br>
                             Dolomites <br>
@@ -186,7 +206,7 @@
                     </p>
                 </div>
                 <div class="block-right">
-                    <img src="images/transparent_logo.png" alt="" class="logo">
+                    <img src="images/logo-pos.svg" alt="" class="logo">
                     <div class="menu">
                         <h2>ABEND-</h2>
                         <h1>MENÜ</h1>
@@ -210,6 +230,7 @@
     </div>
 
     <div class="page-two">
+        <img class="bg-img" src="images/tree.svg" alt="">
         <div class="page-inner">
             <div class="clear-both">
                 <div class="block-left">
@@ -316,7 +337,7 @@
                         <h5>KÄSEBRETTL</h5>
                    </div>
                     <h5>ALLERGENE</h5>
-                    <p>Bei Allergenen wenden Sie sich bitte an 
+                    <p>Bei Allergenen wenden Sie sich bitte an  <br>
                         unsere Rezeption / Servicemitarbeiter.</p>
                 </div>
             </div>
