@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Unica+One&display=swap');
+
+        body{
+            color: #19222A;
+        }
+        .page-container{
+            padding: 60px;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        .mountain{
+            position: absolute;
+            bottom: -167%;
+            width: 350%;
+            z-index: -1;
+            right: 0;
+            left: -130%;
+            margin: auto;
+        }
+        h1, h2, h3, h4, h5, p, span{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: block;
+        }
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-family: 'Unica One', cursive; 
+        }
+        .title-two{
+            font-size:60px ;
+        }
+        .title-two{
+            font-size: 80px;
+            color: #A2895B;
+        }
+        h2{
+            font-family: 'Unica One', cursive;
+            color: #A2895B;
+            font-size: 35px;
+        }
+        h3{
+            color: #19222A;
+            font-weight: bold;
+            font-size: 18px;
+        } 
+        h4{ 
+
+        }
+        h5{
+            font-family: 'Unica One', cursive;
+            font-size: 22px;
+            color: #A2895B;
+          
+        }
+        h6{
+            font-family: 'Unica One', cursive;
+            color: #A2895B;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .single-box h6{
+            color: #385458;
+            margin-bottom: 20px;
+        }
+        .logo{ 
+            width: 100px;
+            margin-bottom: 150px;
+        }
+        .clear-both .left-text{
+            float: left;
+            width: 40%;
+            margin-right: 20%;
+        }
+        .clear-both .right-text{
+            float: right;
+            width: 40%;
+        }
+        .clear-both::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .line-box img{
+            width: 30px;
+        }
+        .line{
+            width: 90%;
+            text-align: right;
+            height: 1px;
+            background-color: #E8EBE8;
+            display: inline-block;
+            margin-bottom: 6px; 
+        }
+        .spacing{
+            height: 300px;
+        }
+        .pera{
+            width: 370px;
+            margin-bottom: 300px;
+            line-height: 2;
+        }
+        .box{
+            border: 2px solid #A28C5C;
+            padding: 40px;
+            position: relative;
+            width: 385px;
+        }
+        .box-b{
+            width: 50px;
+            position: absolute;
+            top: -30px;
+        }
+        .box p{
+            margin-top: 10px;
+            line-height: 2;
+        }
+        .scanner-box{
+            width: 100%;
+        }
+        .scanner-box img{
+            width: 75px;
+            float: left;
+        }
+        .scanner-box-inner{
+            margin-left: 10px;
+            padding-top: 15px;
+            float: left;
+           
+        }
+        .scanner-box-inner p{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .date{
+            font-weight: 300;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 152px;
+        }
+        .heading-one span{
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Unica One', cursive; 
+        }
+        .time-box{
+            position: relative;
+        }
+        .time-box span{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 18px;
+            color: #A2895B;
+           
+        }
+        .heading-one{
+            margin-bottom: 40px;
+        }
+        .heading-two{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .heading-two span{
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Unica One', cursive; 
+        }
+        .single-box{
+            margin-bottom: 40px;
+        }
+        .heading-three{
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .heading-three span{
+            font-size: 22px;
+            font-family: 'Unica One', cursive; 
+            color: #6C7172;
+            font-weight: 400;
+        }
+        .box-spacing{
+            margin-top: 250px;
+        }
+        .box-two p{
+            line-height: 1.5;
+        }
+        .box-two .cglo{
+            color: #737D87;
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .box-two .order{
+            color: #C1C3C2;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .line-box{
+            margin-bottom: 10px;
+        }
+        .box-two h4{
+            color: #A2895B;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <img class="mountain" src="images/MOUNTAIN.svg" alt="">
+        <div class="clear-both">
+            <div class="left-text">
+                <div class="spacing"></div>
+                <h6>CUSTOM CONTENT</h6>
+                <p class="pera">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Vivamus pharetra egestas
+                    tempus. Maecenas fermentum, tellus id
+                    hendrerit ultricies, est felis aliquam lectus, non
+                    sollicitudin tortor ante ullamcorper lacus. In
+                    ut diam ac augue pharetra eleifend. Donec
+                    consectetur massa vel placerat faucibus.
+                    Sed nulla nunc, feugiat sed ex non, blandit
+                    commodo sem. Pellentesque erat libero, lacinia
+                    non lacinia in, pellentesque id eros. Nulla
+                    pellentesque consequat orci vitae cursus.</p>
+
+                    <div class="box">
+                        <img class="box-b" src="images/b-bg.png" alt="">
+                        <h3>Premium Activehotel Bergkönig</h3>
+                        <p>Schulweg 9 <br>
+                            6167 Neustift im Stubaital  <br>
+                            Österreich <br>
+                            Tel. +43 (0) 5226 2558  <br>
+                            info@activehotel.at</p>
+                    </div>
+            </div>
+            <div class="right-text">
+                <div class="spacing"></div>
+                    <img class="logo" src="images/Logo_Bergkoenig_gold.png" alt="">
+                    <h1>
+                       <span class="title-one">
+                             ABEND-
+                       </span> 
+                       <span class="title-two">
+                            MENÜ
+                       </span>
+                    </h1>
+                    <span class="date">30. Mai 2022</span>
+                    <div class="scanner-box">
+                        <img  src="images/qrcode (3).svg" alt="">
+                        <div class="scanner-box-inner">
+                            <h5>Info & News</h5>
+                             <p>activehotel.guestnet.info</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <img class="mountain" src="images/MOUNTAIN.svg" alt="">
+        <div class="clear-both">
+            <div class="left-text">
+                <div class="heading-one">
+                    <span >TAGES-</span>
+                    <h2>APERITIF</h2>
+                </div>
+                <div class="time-box">
+                    <h3>Aperol Spritz</h3>
+                    <span>8,90 €</span>
+                </div>
+               <div class="heading-two">
+                    <span>UNSERE</span>
+                    <h2>WEINEMPFEHLUNG</h2>
+               </div>
+        
+                <div class="single-box">
+                    <h6>WEISSWEIN</h6>
+                    <div class="time-box">
+                        <h3>Hampton Water  <br>
+                            RoséLanguedoc AOP</h3>
+                        <span>8,90 €</span>
+                    </div>
+                    <p>Weingut Gérard <br>
+                        BertrandFrankreich - Jahrgang <br>
+                        2020</p>
+                </div>
+        
+                <div class="single-box">
+                    <h6>  ROTWEIN</h6>
+                    <div class="time-box">
+                        <h3>Mouton Cadet </h3>
+                        <span>8,90 €</span>
+                    </div>
+                    <p>Weingut Baron Philippe 
+                        de RothschildGironde, 
+                        FranciaRiserva 2015</p>
+                </div>
+        
+                <div class="heading-three">
+                    <span>DER PASSENDE</span>
+                    <h2>DIGESTIV</h2>
+                </div>
+                <div class="time-box">
+                    <h3>Ramazotti</h3>
+                    <span>5,20 €</span>
+                </div>
+                <div class="box box-spacing">
+                    <img class="box-b" src="images/b-bg.png" alt="">
+                    <h3>Allergene</h3>
+                  <p>1 Glutenhaltiges Getreide, <br>
+                    2 Krebstiere, 3 Eier, 4 Fische, <br>
+                    5 Erdnüsse, 6 Sojabohnen, 7 Milch, <br>
+                    8 Schalenfrüchte, 9 Sellerie, 10 Senf, <br>
+                    11 Sesamsamen, 12 Schwefeldioxid <br>
+                    &Sulphite, 13 Lupinen, 14 Weichtiere</p>
+                </div>
+            </div>
+            <div class="right-text">
+                <div class="box-two">
+                    <h3>BUNTE VARIATION</h3>
+                    <p>von vitaminreichen Salaten mitherzhaften  <br>
+                        Dressings vom Buﬀ et</p>
+                        <span class="cglo" >C,G,L,O</span>
+                        <span class="order" >ODER</span>
+                </div>
+                <div class="box-two">
+                    <h3>CONSOMMÉ VOM JUNGRIND</h3>
+                    <p>mit Eierstich</p>
+                        <span class="cglo" >C,G,L,O</span>
+                        <span class="order" >ODER</span>
+                </div>
+                <div class="box-two">
+                    <h3>OFENFRISCHE SPECK-ZWIEBELSCHNITTE
+                        </h3>
+                    <p>an Sauerrahmsauce</p>
+                        <span class="cglo" >C,G,L,O</span>
+                </div>
+                <div class="line-box">
+                    <img src="images/b-bg-removebg.png" alt="images">
+                    <div class="line" ></div>
+                </div>
+                <div class="box-two">
+                    <h4>MENÜ 1</h4>
+                    <h3>GEBRATENES FILET VOM ROTEN WELS</h3>
+                    <p>an PestobuttersauceBelugalinsen und <br>
+                        Brüsslerspitzen</p>
+                        <span class="cglo" >C,G,L,O</span>
+                        <span class="order" >ODER</span>
+                </div>
+                <div class="box-two">
+                    <h4>MENÜ 2</h4>
+                    <h3>GEBRATENES FILET VOM ROTEN WELS</h3>
+                    <p>Mit Dörrpﬂ aumen gefüllter Schweinerückenan <br>
+                        cremiger Rosmarinpolentaund <br>
+                        Florentinertomate</p>
+                        <span class="cglo" >C,G,L,O</span>
+                </div>
+                <div class="line-box">
+                    <img src="images/b-bg-removebg.png" alt="images">
+                    <div class="line" ></div>
+                </div>
+                <div class="box-two">
+                    <h4>VEGETARISCHES MENÜ</h4>
+                    <h3>HAUSGEMACHTER SPINATKNÖDEL</h3>
+                    <p>mit geriebenem Bergkäseund brauner Butte</p>
+                        <span class="cglo" >C,G,L,O</span>
+                </div>
+                <div class="line-box">
+                    <img src="images/b-bg-removebg.png" alt="images">
+                    <div class="line" ></div>
+                </div>
+                <div class="box-two">
+                    <h4>ALTERNATIVES MENÜ</h4>
+                    <h3>MIT EINER PETERSILIENFARCE GEFÜLLTE 
+                        HÜHNERKEULE</h3>
+                    <p>an Rahmsauceund sautierten Speckbohnen</p>
+                        <span class="cglo" >C,G,L,O</span>
+                </div>
+                <div class="line-box">
+                    <img src="images/b-bg-removebg.png" alt="images">
+                    <div class="line" ></div>
+                </div>
+                <div class="box-two">
+                    <h4>KINDERMENÜ</h4>
+                    <h3>HAUSGEMACHTES „BERNER WÜRSTL</h3>
+                    <p>mit Potato Wedges und Cocktailsauce</p>
+                    <span class="cglo" >C,G,L,O</span>
+                </div>
+                <div class="line-box">
+                    <img src="images/b-bg-removebg.png" alt="images">
+                    <div class="line" ></div>
+                </div>
+                <div class="box-two">
+                    <h3>CREME VON DER MASCARPONE</h3>
+                    <p></p>
+                    <span class="cglo" >C,G,L,O</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
