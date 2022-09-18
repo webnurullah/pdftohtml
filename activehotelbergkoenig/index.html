@@ -14,18 +14,21 @@
         body{
             color: #19222A;
         }
-        .page-container{
+        .page-one{
             padding: 60px;
             font-family: 'Open Sans', sans-serif;
-           
+            position: relative;
             overflow: hidden;
         }
-        .bg-img{
+        .page-two{
+            padding: 60px;
+            font-family: 'Open Sans', sans-serif;
             position: relative;
+            overflow: hidden;
         }
         .mountain{
             position: absolute;
-            bottom: -1424px;
+            bottom: -120%;
             width: 404%;
             z-index: -1;
             right: 0;
@@ -224,8 +227,8 @@
     </style>
 </head>
 <body>
-    <div class="page-container">
-        
+    <div class="page-one">
+        <img class="mountain" src="images/mountain.svg" alt="img">
         <div class="clear-both">
             <div class="left-text">
                 <div class="spacing"></div>
@@ -273,12 +276,9 @@
                     </div>
             </div>
         </div>
-
-        <div class="bg-img" >
-            <img class="mountain" src="images/MOUNTAIN.svg" alt="">
-        </div>
     </div>
-    <div class="page-container">
+    <div class="page-two">
+        <img class="mountain" src="images/mountain.svg" alt="img">
         <div class="clear-both">
             <div class="left-text">
                 <div class="heading-one">
@@ -417,10 +417,6 @@
                     <span class="cglo" >C,G,L,O</span>
                 </div>
             </div>
-        </div>
-
-        <div class="bg-img" >
-            <img class="mountain" src="images/MOUNTAIN.svg" alt="">
         </div>
     </div>
 </body>
